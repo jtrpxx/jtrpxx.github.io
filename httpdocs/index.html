@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio By Folk</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/snippet.css" />
+<link rel="stylesheet" href="asset/css/modal.css" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#about"> Chaturaphat [Folk]</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#code-snippets">Code Snippets</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="fw-bold" style="font-size: 20px">Welcome | Portfolio</span></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about" data-bs-dismiss="offcanvas">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#code-snippets" data-bs-dismiss="offcanvas">Code Snippets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+          </ul>
+
+          <div class="mt-4 border-top border-bottom border-light border-opacity-10 py-3">
+            <h6 class="text-white mb-3">หากคุณมีข้อเสนอแนะ โอกาสในการทำงาน หรือแค่ต้องการทักทาย สามารถติดต่อผมได้ทาง</h6>
+            <ul class="list-unstyled text-white">
+              <p><i class="fas fa-envelope"></i> อีเมล: jaturaphat1999@gmail.com</p>
+              <p><i class="fas fa-phone"></i> โทรศัพท์: 080-864-0983</p>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="hero-section">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Hi,I'm <span class="highlight-text">Chaturaphat</span></h1>
+            <h2 class="tagline">About Me</h2>
+            <p>❝ผมเป็นคนที่มีความรับผิดชอบงานสูง ไม่เคยบกพร่องต่อหน้าที่ รับฟังความคิดเห็นผู้อื่น เปิดใจเรียนรู้สิ่งใหม่ และเรียนรู้ได้เร็ว สามารถปรับตัวเข้ากับทีมได้ดี มีความอดทนภายใต้แรงกดดัน
+              และพร้อมพัฒนาตัวเองอยู่เสมอ❞</p>
+          </div>
+          <div class="hero-image">
+            <img src="asset/img/profile/profile-removebg-preview.png" />
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-padding">
+        <div class="container">
+          <h2>Experience</h2>
+          <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button experienceCarousel" data-bs-target="#experienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button experienceCarousel" data-bs-target="#experienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button experienceCarousel" data-bs-target="#experienceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner experience-list">
+              <div class="carousel-item active">
+                <div class="experience-item">
+                  <h3>Php Programmer</h3>
+                  <h4>TNP Development Group Co.,Ltd.</h4>
+                  <p class="duration">18 เม.ย 2566 - 7 มิ.ย 2567</p>
+                  <ul class="ui-duration">
+                    <li>Work type: e-commerce web, business web, management system web</li>
+                    <li>Job description: พัฒนาและแก้ไขตามความต้องการของลูกค้า รวมไปถึงการออกแบบ ฐานข้อมูล และ ux/ui</li>
+                    <li>Stack: Html, Css, jQuery, Ajax, Php laravel, Mysql</li>
+                    <li>Tool: Vs code, Navicat, FileZilla, Ms office, Power BI</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="experience-item">
+                  <h3>Full-stack Developer</h3>
+                  <h4>ORISMA TECHNOLOGY Co.,Ltd.</h4>
+                  <p class="duration">10 มิ.ย 2567 - 20 ธ.ค 2568</p>
+                  <ul class="ui-duration">
+                    <li>Work type: Software house</li>
+                    <li>Job description: พัฒนาและแก้ไขตามความต้องการของลูกค้า รวมไปถึงการออกแบบ ux/ui</li>
+                    <li>Stack: Html, Css, jQuery, Ajax, Php laravel, Mysql</li>
+                    <li>Tool: Vs code, Navicat, FileZilla, Ms office, Power BI</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="experience-item">
+                  <h3>Full-stack Developer</h3>
+                  <h4>Soft network Co.,Ltd.</h4>
+                  <p class="duration">1 ม.ค 2568 - 1 ก.ค 2568</p>
+                  <ul class="ui-duration">
+                    <li>Work type: Software house</li>
+                    <li>Job description: พัฒนาและแก้ไขตามความต้องการของลูกค้า รวมไปถึงการออกแบบ ux/ui</li>
+                    <li>Stack: Html, Css, jQuery, Ajax, Python Django, postgresql</li>
+                    <li>Tool: Vs code, Navicat, FileZilla, Ms office, Power BI</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="experience-item">
+                  <h3>Freelance</h3>
+                  <h4>Folksong</h4>
+                  <p class="duration">20 มิ.ย 2567 - ปัจจุบัน</p>
+                  <ul class="ui-duration">
+                    <li>Work type: e-commerce web, business web, management system web</li>
+                    <li>Job description: พัฒนาและแก้ไขตามความต้องการของลูกค้า รวมไปถึงการออกแบบ ฐานข้อมูล และ ux/ui</li>
+                    <li>Stack: Html, Css, jQuery, Ajax, Php laravel, Mysql</li>
+                    <li>Tool: Vs code, Navicat, FileZilla, Ms office, Power BI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-padding bg-darker">
+        <div class="container">
+          <h2>Skills and Abilities</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Front-end</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>AJAX</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Back-end</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>PHP (Pure)</li>
+                <li>PHP (Laravel)</li>
+                <li>Python (Django)</li>
+                <li>C# (ASP.NET)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Database</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Others</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>SourceTree</li>
+                <li>Ms Office</li>
+                <li>Power Bi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-padding">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#projectImageModal"
+                 data-image-prefix="asset/img/tnp/civili/civili-" 
+                 data-image-count="4"
+                 data-title="CIVILI MALL">
+              <img src="asset/img/tnp/civili/civili-1.png" alt="CIVILI MALL Thumbnail" />
+              <h3>CIVILI MALL</h3>
+              <p>เว็บแอปพลิเคชันขายสินค้าออนไลน์<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Php laravel, Mysql<br><b>Tool:</b> Vs code, Navicat, FileZilla, Ms office, Power BI</p>
+            </div>
+
+            <div class="project-card"
+              data-bs-toggle="modal"
+              data-bs-target="#projectImageModal"
+              data-image-prefix="asset/img/tnp/lbm/lbm-" 
+              data-image-count="8" 
+              data-title="Labour Management">
+            <img src="asset/img/tnp/lbm/lbm-1.png" alt="Labour Management Thumbnail" />
+            <h3>Labour Management</h3>
+            <p>เว็บแอปพลิเคชันสำหรับจัดการฐานข้อมูลแรงงานต่างด้าว รองรับการจัดเก็บข้อมูลส่วนบุคคล ประวัติการทำงาน และสถานะแรงงาน พร้อมฟีเจอร์ออกเอกสารต่างๆของแรงงานต่างด้าว<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Php laravel, Mysql<b>Tool:</b> Vs code, Navicat, FileZilla, Ms office, Power BI</p>
+          </div>
+
+            <div class="project-card" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#projectImageModal"
+                 data-image-prefix="asset/img/tnp/lbn/lbn-" 
+                 data-image-count="5" 
+                 data-title="Labour Insure">
+              <img src="asset/img/tnp/lbn/lbn-1.png" alt="Labour Insure Thumbnail" />
+              <h3>Labour Insure</h3>
+              <p>
+                เว็บแอปพลิเคชันสำหรับจัดการประกันสุขภาพแรงงานต่างด้าว ออกแบบให้ใช้งานง่าย เชื่อมต่อฐานข้อมูลแรงงานและประกันภัย พร้อมระบบแจ้งเตือนและติดตามสถานะกรมธรรม์<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Php laravel, Mysql<br><b>Tool:</b> Vs code, Navicat, FileZilla, Ms office, Power BI</p>
+              </p>
+            </div>
+
+            <div class="project-card" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectImageModal"
+                data-image-prefix="asset/img/orisma/orm-" 
+                data-image-count="7" 
+                data-title="EZYHR">
+              <img src="asset/img/orisma/orm-2.png" alt="EZYHR Thumbnail" />
+              <h3>EZYHR</h3>
+              <p>เว็บแอปพลิเคชันสำหรับจัดการพนักกงานภายองค์กร<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Node.js, postgresql<br><b>Tool:</b> Vs code, DBeaver, Source tree,Ms office</p>
+            </div>
+
+            <div class="project-card" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectImageModal"
+                data-image-prefix="asset/img/snw/lms/lms-" 
+                data-image-count="9" 
+                data-title="LMS lab softnetwork">
+              <img src="asset/img/snw/lms/lms-1.png" alt="LMS Thumbnail" />
+              <h3>LMS lab softnetwork</h3>
+              <p>ระบบบริหารจัดการสินเชื่อ สำหรับติดตามสถานะสินเชื่อ ชำระเงิน และบริหารสัญญาเงินกู้ เชื่อมต่อกับระบบ LOS เพื่อรับข้อมูลผู้ขอสินเชื่อแบบอัตโนมัติ<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Python Django, postgresql<br><b>Tool:</b> Vs code, Navicat, Git hub, Ms office</p>
+            </div>
+
+            <div class="project-card" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectImageModal"
+                data-image-prefix="asset/img/snw/los/los-" 
+                data-image-count="5" 
+                data-title="LOS lab softnetwork">
+              <img src="asset/img/snw/los/los-1.png" alt="LOS Thumbnail" />
+              <h3>LOS lab softnetwork</h3>
+              <p>ระบบอนุมัติคำขอสินเชื่อ สำหรับตรวจสอบข้อมูลผู้ขอสินเชื่อ วิเคราะห์คุณสมบัติ และส่งข้อมูลไปยัง LMS เพื่อดำเนินการจัดการสินเชื่อต่อไป<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Python Django, postgresql<br><b>Tool:</b> Vs code, Navicat, Git hub, Ms office</p>
+            </div>
+
+            <div class="project-card" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectImageModal"
+                data-image-prefix="asset/img/freelance/lieng/lieng-" 
+                data-image-count="4" 
+                data-title="English for Tourism">
+              <img src="asset/img/freelance/lieng/lieng-1.png" alt="English for Tourism Thumbnail" />
+              <h3>English for Tourism</h3>
+              <p>
+                เว็บแอปพลิเคชันเรียนภาษาอังกฤษเพื่อการท่องเที่ยว พัฒนาสำหรับหลักสูตรออนไลน์ 
+                รองรับการเรียนรู้แบบ Interactive ด้วยสื่อวิดีโอ แบบฝึกหัด และระบบติดตามความคืบหน้าของผู้เรียน
+                ออกแบบให้เหมาะสำหรับนักเรียน นักศึกษา หรือผู้ที่ต้องการพัฒนาทักษะภาษาเพื่ออาชีพในสายบริการ<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, Php, Mysql<br><b>Tool:</b> Vs code, Vs, Navicat, FileZilla, Ms office</p>
+            </div>
+
+           <div class="project-card" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectImageModal"
+                data-image-prefix="asset/img/freelance/bizzacc/bizzacc-" 
+                data-image-count="3"
+                data-title="Bizz Acc">
+            <img src="asset/img/freelance/bizzacc/bizzacc-1.png" alt="Bizz Acc Thumbnail" />
+            <h3>Bizz Acc</h3>
+            <p>
+              เว็บแอปพลิเคชันสำหรับ Matching ระหว่างสำนักงานบัญชีและผู้ประกอบการ  
+              โดยผู้ประกอบการสามารถค้นหาและคัดเลือกสำนักงานบัญชีที่ตรงความต้องการ เพื่อว่าจ้างได้อย่างสะดวกและมีประสิทธิภาพ<br><br><b>Stack:</b> Html, Css, jQuery, Ajax, C# asp.net, Mysql<br><b>Tool:</b> Vs code, Vs, Navicat, FileZilla, Ms office</p>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="projectImageModal" tabindex="-1" aria-labelledby="projectImageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl"> <div class="modal-content" style="background-color: transparent; border: none;"> <div class="modal-body p-0">
+              <div id="projectImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner" id="modalCarouselInner">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectImageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectImageCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="code-snippets" class="section-padding bg-darker">
+        <div class="container">
+          <h2>Code Snippets / Best Practices</h2>
+          <p>ตัวอย่างแนวคิดการเขียนโค้ดและการใช้ Best Practices ที่ผมนำมาประยุกต์ใช้ในการพัฒนา</p>
+          <div class="code-snippet-grid">
+            <div class="code-snippet-card">
+              <h5>ผมใช้แนวคิด MVC เพื่อแยกความรับผิดชอบของโค้ด ทำให้โครงสร้างของโปรเจกต์มีความชัดเจน ดูแลรักษาได้ง่าย และสามารถพัฒนาในทีมได้อย่างมีประสิทธิภาพ</h5>
+              <pre><code><span class="comment">// ---  ตัวอย่าง Data Dictionary ตารางข้อมูลประกันภัยค้ำประกัน ---</span>
+<div class="table-wrapper">
+    <table class="dark-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Field Name</th>
+          <th>Type</th>
+          <th>Not Null</th>
+          <th>Default</th>
+          <th>Key</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>id</td><td>int8(64)</td><td>✓</td><td></td><td>PK, AI</td><td>รหัสประจำแถว (Primary Key, Auto Increment)</td></tr>
+        <tr><td>2</td><td>collateral_id</td><td>int8(64)</td><td>✓</td><td></td><td>FK, Index</td><td>รหัสหลักทรัพย์ค้ำประกัน</td></tr>
+        <tr><td>3</td><td>insure_no</td><td>varchar(50)</td><td></td><td></td><td></td><td>เลขที่กรมธรรม์ประกันภัย</td></tr>
+        <tr><td>4</td><td>insure_date</td><td>date</td><td></td><td></td><td></td><td>วันที่เริ่มประกัน</td></tr>
+        <tr><td>5</td><td>insure_expire</td><td>date</td><td></td><td></td><td></td><td>วันที่สิ้นสุดประกัน</td></tr>
+        <tr><td>6</td><td>insure_id</td><td>int8(64)</td><td></td><td></td><td>FK, Index</td><td>รหัสบริษัทประกันภัย</td></tr>
+        <tr><td>7</td><td>insure_type_id</td><td>int8(64)</td><td>✓</td><td></td><td>FK, Index</td><td>ประเภทการประกันภัย</td></tr>
+        <tr><td>8</td><td>insure_type_other</td><td>varchar(200)</td><td></td><td></td><td></td><td>รายละเอียดประเภทอื่น ๆ</td></tr>
+        <tr><td>9</td><td>insured_capital</td><td>numeric(18,2)</td><td>✓</td><td>0</td><td></td><td>จำนวนเงินทุนประกัน</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+<span class="comment">// ---  ตัวอย่าง ROUTE (Django ROUTE) ---</span>
+<span class="keyword">from</span> django.urls <span class="keyword">import</span> path <span class="comment">// ใช้เพื่อ import ฟังก์ชัน path ที่เอาไว้กำหนด URL pattern สำหรับแต่ละหน้า</span>
+<span class="keyword">from</span> . <span class="keyword">import</span> views <span class="comment">// import ไฟล์ views.py ภายใน directory เดียวกัน เพื่อเรียกใช้ฟังก์ชันที่อยู่ใน view</span>
+app_name = <span class="string">'contract_collateral'</span> <span class="comment">// กำหนด namespace เพื่อแยกชื่อ path ของแต่ละแอป</span>
+
+urlpatterns = [
+  path(<span class="string">'detail/&lt;slug:slug&gt;'</span>, views.detail, name=<span class="string">'detail'</span>), <span class="comment">// กำหนด path URL</span>
+]
+
+<span class="comment">// ---  ตัวอย่าง MODEL (Django MODEL) ---</span>
+<span class="keyword">from</span> django.db <span class="keyword">import</span> models <span class="comment">// import models</span>
+<span class="keyword">from</span> utils.function <span class="keyword">import</span> BaseModel <span class="comment">// import class BaseModel</span>
+
+<span class="keyword">class</span> <span class="class-name">CollateralInsure</span>(BaseModel): <span class="comment">//สืบทอด class BaseModel</span>
+    collateral = models.ForeignKey(CollateralInfo, related_name='collateral_insure_collateral', on_delete=models.CASCADE, verbose_name='หลักทรัพย์')
+    insure_type = models.ForeignKey(MasterInsureType, related_name='collateral_insure_insure_type', on_delete=models.CASCADE, verbose_name='ประเภทประกัน')
+    insure_no = models.CharField(max_length=50, null=True, blank=True, verbose_name='เลขที่กรมธรรม์')
+    slug = models.SlugField(...)
+
+    <span class="keyword">class</span> Meta:
+        db_table = <span class="string">'tb_collateralinsure'</span>
+        ordering = [<span class="string">'id'</span>]
+
+
+<span class="comment">// ---  ตัวอย่าง View (Django Template)---</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card-body"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group mb-2 row"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"col-3"</span><span class="tag">&gt;</span><span class="content">ประเภทหลักประกัน</span><span class="tag">&lt;/div&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"col-9"</span><span class="tag">&gt;</span><span class="template">{{ collateral_info.get_collateral_type_display }}</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">// ---  ตัวอย่าง Controller  (Django View)---</span>
+<span class="keyword">from</span> insurance.collateral_insure.models <span class="keyword">import</span> CollateralInsure <span class="comment">// import CollateralInsure</span>
+<span class="keyword">from</span> contract.hirepurchase.models <span class="keyword">import</span> ContractInfo <span class="comment">// import ContractInfo</span>
+ 
+<span class="keyword">def</span> detail(request, slug): <span class="comment">// เก็บข้อมูลทั้งหมดที่ส่งมาจาก client </span>
+    collateral_info = get_object_or_404(CollateralInfo, slug=slug) <span class="comment">// ดึงข้อมูลจาก Model CollateralInfo ที่มี slug ตรงกับค่าที่ส่งมา </span>
+    collateral_insure = CollateralInsure.objects.filter( <span class="comment">// ดึงข้อมูลจาก Model CollateralInsure ที่สัมพันธ์กับ collateral_info</span>
+        collateral=collateral_info,
+        status='A'
+    ).order_by('insure_date', 'insure_expire', 'id') 
+
+    context = { <span class="comment">//  สร้างชุดข้อมูล ที่จะส่งไปให้ Template</span>
+        <span class="string">'collateral_info'</span>: collateral_info,
+        <span class="string">'collateral_insure'</span>: collateral_insure,
+    }
+
+    <span class="keyword">return</span> render(request, <span class="string">'collateral/detail.html'</span>, context) <span class="comment">// ใช้ฟังก์ชัน render() เพื่อประมวลผล Template collateral/detail.html และส่ง context ไปให้ template เพื่อแสดงข้อมูลจริงในหน้าเว็บ</span>
+        </code></pre>
+              <p>
+                ในตัวอย่างนี้ ผมแสดงให้เห็นการออกแบบและพัฒนาโปรเจกต์ด้วยแนวคิด <strong>MVC </strong> ควบคู่กับการออกแบบตารางข้อมูล (Data Dictionary) อย่างเป็นระบบ 
+                โดยแยกหน้าที่ของแต่ละส่วนอย่างชัดเจน เช่น Model สำหรับจัดการข้อมูล, View สำหรับแสดงผล และ Controller สำหรับควบคุมการทำงานของระบบ ช่วยให้โครงสร้างโค้ดสามารถดูแลรักษาได้ง่าย 
+                รองรับการทำงานร่วมกันเป็นทีม และสามารถนำไปปรับปรุงหรือขยายต่อในอนาคตได้อย่างยืดหยุ่น นอกจากนี้ยังมีการกำกับความหมายของฟิลด์ในฐานข้อมูลเพื่อให้นักพัฒนาคนอื่นสามารถเข้าใจและต่อยอดได้สะดวก
+              </p>
+              <p>
+                นอกจากนี้ ในการออกแบบตารางข้อมูล ผมยังได้มีการกำหนด <strong>Foreign Key</strong> เพื่อรักษาความสัมพันธ์ของข้อมูลระหว่างตารางอย่างถูกต้อง และใช้ <strong>Index</strong> เพื่อเพิ่มประสิทธิภาพในการสืบค้นข้อมูล 
+                ซึ่งเป็นแนวทางที่ช่วยให้ระบบสามารถทำงานได้รวดเร็วและมีความเสถียร โดยเฉพาะในระบบที่มีข้อมูลจำนวนมากหรือมีการ Join หลายตาราง
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <h2>ติดต่อ</h2>
+          <p class="text-center">❝หากคุณมีข้อเสนอแนะ โอกาสในการทำงาน หรือแค่ต้องการทักทาย สามารถติดต่อผมได้ทาง❞</p>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> อีเมล: jaturaphat1999@gmail.com</p>
+            <p><i class="fas fa-phone"></i> มือถือ: 080-864-0983</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="scrollTopBtn">
+      <svg class="progress-circle" width="50" height="50">
+        <circle cx="25" cy="25" r="22" id="progress-ring-base" />
+        <circle cx="25" cy="25" r="22" id="progress-ring" />
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <footer class="footer-custom text-center">
+      <div class="container">
+        <p>&copy; 2025 - Developer By Chaturaphat</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/script.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>

@@ -405,6 +405,16 @@ button {
   flex-grow: 1;
 }
 
+.project-credit {
+    font-size: 0.85em;  
+    color: var(--secondary-color); 
+    padding: 15px 15px 0px !important; 
+    margin-top: auto;  
+    text-align: center;  
+    border-top: 1px solid var(--border-color);  
+    padding-top: 15px;  
+}
+
 .project-links {
   display: flex;
   justify-content: center;

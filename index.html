@@ -57,15 +57,13 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body d-flex flex-column">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about"
-              data-bs-dismiss="offcanvas">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#code-snippets" data-bs-dismiss="offcanvas">Code Snippets</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#code-snippets">Code Snippets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
 
         <div class="mt-4 border-top border-bottom border-light border-opacity-10 py-3">
@@ -447,11 +445,18 @@ urlpatterns = [
     <span class="keyword">return</span> render(request, <span class="string">'collateral/detail.html'</span>, context) <span class="comment">// ใช้ฟังก์ชัน render() เพื่อประมวลผล Template collateral/detail.html และส่ง context ไปให้ template เพื่อแสดงข้อมูลจริงในหน้าเว็บ</span>
         </code></pre>
             <p>
-              ในตัวอย่างนี้ ผมแสดงให้เห็นการออกแบบและพัฒนาโปรเจกต์ด้วยแนวคิด MVC 
-              โดยแยกหน้าที่ของแต่ละส่วนอย่างชัดเจน เช่น Model สำหรับจัดการข้อมูล, View สำหรับแสดงผล และ Controller สำหรับควบคุมการทำงานของระบบ ช่วยให้โครงสร้างโค้ดสามารถดูแลรักษาได้ง่าย รองรับการทำงานร่วมกันเป็นทีม และสามารถนำไปปรับปรุงหรือขยายต่อในอนาคตได้อย่างยืดหยุ่น อีกทั้งยังมีการใช้แนวคิด OOP เช่น การสร้าง Model ให้สืบทอดจาก BaseModel เพื่อให้สามารถใช้ฟังก์ชันร่วมกันได้
+              ในตัวอย่างนี้ ผมแสดงให้เห็นการออกแบบและพัฒนาโปรเจกต์ด้วยแนวคิด MVC
+              โดยแยกหน้าที่ของแต่ละส่วนอย่างชัดเจน เช่น Model สำหรับจัดการข้อมูล, View สำหรับแสดงผล และ Controller
+              สำหรับควบคุมการทำงานของระบบ ช่วยให้โครงสร้างโค้ดสามารถดูแลรักษาได้ง่าย รองรับการทำงานร่วมกันเป็นทีม
+              และสามารถนำไปปรับปรุงหรือขยายต่อในอนาคตได้อย่างยืดหยุ่น อีกทั้งยังมีการใช้แนวคิด OOP เช่น การสร้าง Model
+              ให้สืบทอดจาก BaseModel เพื่อให้สามารถใช้ฟังก์ชันร่วมกันได้
             </p>
             <p>
-              ในด้านการออกแบบฐานข้อมูล ผมได้จัดทำ Data Dictionary อย่างเป็นระบบ โดยใส่ความหมายของแต่ละฟิลด์ผ่านคอลัมน์ Comment และในแต่ละฟิลด์ก็ตั้งชื่อให้สื่อความหมายเข้าใจง่าย เพื่อให้นักพัฒนาคนอื่นสามารถเข้าใจหน้าที่ของฟิลด์ได้ทันทีโดยไม่ต้องเดา นอกจากนี้ยังมีการกำหนด Foreign Key เพื่อเชื่อมโยงข้อมูลระหว่างตารางที่เกี่ยวข้องกัน และใช้ Index เพื่อเพิ่มประสิทธิภาพในการค้นหาข้อมูล ช่วยให้ระบบทำงานได้อย่างรวดเร็วและเสถียร โดยเฉพาะเมื่อต้องจัดการข้อมูลจำนวนมากหรือทำงานร่วมกับหลายตาราง
+              ในด้านการออกแบบฐานข้อมูล ผมได้จัดทำ Data Dictionary อย่างเป็นระบบ โดยใส่ความหมายของแต่ละฟิลด์ผ่านคอลัมน์
+              Comment และในแต่ละฟิลด์ก็ตั้งชื่อให้สื่อความหมายเข้าใจง่าย
+              เพื่อให้นักพัฒนาคนอื่นสามารถเข้าใจหน้าที่ของฟิลด์ได้ทันทีโดยไม่ต้องเดา นอกจากนี้ยังมีการกำหนด Foreign Key
+              เพื่อเชื่อมโยงข้อมูลระหว่างตารางที่เกี่ยวข้องกัน และใช้ Index เพื่อเพิ่มประสิทธิภาพในการค้นหาข้อมูล
+              ช่วยให้ระบบทำงานได้อย่างรวดเร็วและเสถียร โดยเฉพาะเมื่อต้องจัดการข้อมูลจำนวนมากหรือทำงานร่วมกับหลายตาราง
             </p>
           </div>
         </div>

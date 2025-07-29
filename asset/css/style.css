@@ -376,7 +376,7 @@ button {
   overflow: hidden;
   box-shadow: 0 4px 15px var(--shadow-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   transition: transform 0.3s ease;
 }
 
@@ -398,21 +398,21 @@ button {
   margin-bottom: 5px;
 }
 
-.project-card p {
+.project-card p:not(.project-credit) { 
   font-size: 0.95em;
   color: var(--secondary-color);
-  padding: 0 15px 15px;
-  flex-grow: 1;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  flex-grow: 1; 
 }
 
 .project-credit {
-    font-size: 0.85em;  
-    color: var(--secondary-color); 
-    padding: 15px 15px 0px !important; 
-    margin-top: auto;  
-    text-align: center;  
-    border-top: 1px solid var(--border-color);  
-    padding-top: 15px;  
+    font-size: 0.85em;
+    color: var(--secondary-color);
+    padding: 15px; 
+    margin-top: auto;
+    text-align: center; 
+    border-top: 1px solid var(--border-color);
 }
 
 .project-links {

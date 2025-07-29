@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         progressRing.style.strokeDashoffset = offset;
         scrollTopBtn.style.display = scrollTop > 200 ? "block" : "none";
 
-        // Navbar scroll effect
         if (scrollTop > 50) {
             navbar.classList.add("scrolled");
         } else {
@@ -126,18 +125,27 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.cycle();
         });
 
+        const projectImageCarousel = document.getElementById('projectImageCarousel');
+        const carousel = bootstrap.Carousel.getInstance(projectImageCarousel);
+
         projectImageModal.addEventListener('click', () => {
-            const carousel = bootstrap.Carousel.getInstance(document.getElementById('projectImageCarousel'));
             if (carousel) {
                 carousel.pause();
             }
         });
 
         projectImageModal.addEventListener('hidden.bs.modal', () => {
-            const carousel = bootstrap.Carousel.getInstance(document.getElementById('projectImageCarousel'));
             if (carousel) {
                 carousel.cycle(); 
             }
+        });
+
+        modalCarouselInner.addEventListener('mouseenter', () => {
+            carousel.pause();
+        });
+
+        modalCarouselInner.addEventListener('mouseleave', () => {
+            carousel.cycle();
         });
     }
 });
